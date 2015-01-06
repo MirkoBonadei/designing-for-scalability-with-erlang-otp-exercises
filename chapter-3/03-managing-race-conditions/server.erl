@@ -33,6 +33,7 @@ stop(Name) ->
         {'DOWN', Ref, process, _Name, _Reason} ->
             {error, no_proc}
     after 5000 ->
+            erlang:demonitor(Ref, [flush]),
             exit(timeout)
     end.
 
@@ -51,6 +52,7 @@ call(Name, Msg, Timeout) ->
         {'DOWN', Ref, process, _Name, _Reason} ->
             {error, no_proc}
     after Timeout ->
+            erlang:demonitor(Ref, [flush]),
             exit(timeout)
     end.    
 
