@@ -9,3 +9,6 @@ In this repository I am grouping together the code written while reading the boo
 - [The Basic Frequency Server](https://github.com/MirkoBonadei/designing-for-scalability-with-erlang-otp-exercises/tree/master/chapter-3/01-frequency-server)
 - [Extracting the generic behaviour of the server](https://github.com/MirkoBonadei/designing-for-scalability-with-erlang-otp-exercises/tree/master/chapter-3/02-extracting-the-generic-server)
 - [Managing some race conditions](https://github.com/MirkoBonadei/designing-for-scalability-with-erlang-otp-exercises/tree/master/chapter-3/03-managing-race-conditions)
+
+#### Chapter 4: Generic Servers
+- [Frequency Server as gen_server](https://github.com/MirkoBonadei/designing-for-scalability-with-erlang-otp-exercises/blob/master/chapter-4/01-frequency-server-with-otp-gen-server/frequency.erl)
